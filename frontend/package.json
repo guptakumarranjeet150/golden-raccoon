@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "dev": "node init && next dev",
+    "build": "node init && next build",
+    "start": "node init && next start",
     "deploy:check": "node ../scripts/check-deploy-readiness.mjs",
     "lint": "eslint",
     "test:agents": "FEATURE_EXECUTE_PREPARE=on FEATURE_EXECUTE_SUBMIT=on NODE_OPTIONS='--require ./scripts/stub-server-only.cjs' tsx --tsconfig tsconfig.json scripts/agent-fixture-check.ts",
